@@ -1,5 +1,8 @@
 # Loading Animation
 
+
+
+
 This project features a loading animation created with HTML and CSS. The animation consists of multiple dots that fade in and out, providing a visually engaging loading effect.
 
 ## How to Run the Project
