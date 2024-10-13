@@ -1,64 +1,149 @@
-.six {
-    --x: -70px;
-    --y: 40px;
-    --delay: 500ms;
-    --deg: 45deg;
-}
-
-.seven {
-    --x: -100px;
-    --delay: 600ms;
-    --deg: 90deg;
-}
-
-.eight {
-    --x: -70px;
-    --y: -90px;
-    --delay: 700ms;
-    --deg: -45deg;
-}
-
-.text {
-    height: 20px;
-    width: 60px;
-    position: absolute;
-    left: calc(50% - 30px);
-    top: calc(50% - 10px);
-    font-size: larger;
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-}
-
-@keyframes fade {
-    from {
-        opacity: 1;
-    }
-    to {
+*, *::after, *::before{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .base{
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .dot{
+        height: 50px;
+        width: 20px;
+        background-color: black;
+        border-radius: 10px;
+        position: absolute;
+        left: calc(50% + var(--x));
+        top : calc(50% + var(--y));
         opacity: 0;
-    }
-}
-
+        transform: rotateZ(var(--deg));
+        animation: fade 800ms var(--delay) linear infinite;
+      }
+      .one{
+        --x : -10px;
+        --y : -120px;
+        --delay : 0ms;
+      }
+      .two{
+        --x : 50px;
+        --y : -90px;
+        --delay : 100ms;
+        --deg : 45deg;
+      }
+      .three{
+        --x : 80px;
+        --deg : 90deg;
+        --delay : 200ms;
+      }
+      .four{
+        --x : 50px;
+        --y : 40px;
+        --delay : 300ms;
+        --deg : -45deg;
+      }
+      .five{
+        --x : -10px;
+        --y : 70px;
+        --delay : 400ms;
+      }
+      .six{
+        --x : -70px;
+        --y : 40px;
+        --delay : 500ms;
+        --deg : 45deg;
+      }
+      .seven{
+        --x : -100px;
+        --delay : 600ms;
+        --deg : 90deg;
+      }
+      .eight{
+        --x : -70px;
+        --y : -90px;
+        --delay : 700ms;
+        --deg : -45deg;
+      }
+      .text{
+        height: 20px;
+        width: 60px;
+        position: absolute;
+        left: calc(50% - 30px);
+        top : calc(50% - 10px);
+        font-size: larger;
+        font-family: cursive;
+        display: flex;
+        justify-content: center;
+      }
+      @keyframes fade{
+        from{
+          opacity: 1;
+        }
+        to{
+          opacity: 0;
+        }
+      }
 /* CSS rules for youtube link */
-.yt {
-    height: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-}
 
-.yt > a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 5px;
-    padding: 0.4em 1em;
-    background-color: red;
-}
+    .yt{
+
+      height : 20px;
+
+      width: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      position: absolute;
+
+      bottom: 20px;
+
+     }
+
+    .yt > a{
+
+      display : flex;
+
+      align-items : center;
+
+      text-decoration : none;
+
+      color : white;
+
+      font-size : 1.2em;
+
+      border-radius: 5px;
+
+      padding: 0.4em 1em;
+
+      background-color: red;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
