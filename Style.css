@@ -1,0 +1,64 @@
+.six {
+    --x: -70px;
+    --y: 40px;
+    --delay: 500ms;
+    --deg: 45deg;
+}
+
+.seven {
+    --x: -100px;
+    --delay: 600ms;
+    --deg: 90deg;
+}
+
+.eight {
+    --x: -70px;
+    --y: -90px;
+    --delay: 700ms;
+    --deg: -45deg;
+}
+
+.text {
+    height: 20px;
+    width: 60px;
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 10px);
+    font-size: larger;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* CSS rules for youtube link */
+.yt {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.yt > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    background-color: red;
+}
+
+
